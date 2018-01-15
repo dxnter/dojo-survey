@@ -28,5 +28,5 @@ def result():
     if error:
         return redirect('/')
     else:
-        return render_template('result.html', name=session['name'], location=session['location'], language=session['location'], comment=session['comment'])
+        return render_template('result.html', name=session['name'], location=session['location'], language=session['language'], comment=session['comment'])
 app.run(debug=True)
